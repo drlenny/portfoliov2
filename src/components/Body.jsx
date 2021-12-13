@@ -2,7 +2,7 @@ import React from "react";
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
-function Header() {
+function Body() {
     return (
         <Container>
         <Box sx={{ my: 2 }}>
@@ -19,4 +19,4 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
     );
 }
 
-export default Header;
+export default Body;
