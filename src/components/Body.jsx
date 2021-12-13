@@ -5,16 +5,18 @@ import Container from '@mui/material/Container';
 function Body() {
     return (
         <Container>
-        <Box sx={{ my: 2 }}>
-          {[...new Array(12)]
-            .map(
-              () => `Cras mattis consectetur purus sit amet fermentum.
-Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
-            )
-            .join('\n')}
-        </Box>
+        <section id="one">
+									<div class="textWrapper"><h1>DANIEL LENIHAN</h1>
+										<h2>Full Stack Web Developer</h2>
+								</div>
+								<div class="container">
+									<header class="major">
+										<h2>About Me</h2>
+									</header>
+									<p>Hello hello! Many thanks for visiting and welcome. I'm Daniel, a full stack developer working from Houston, Texas. After having studied animal behavior and working as a professional dog trainer, I have since turned my focus towards more creative pursuits in programming. My passion in life is to create things that I can share with others and will be of use to people, so naturally the unlimited and ever changing possiblilities of programming code is a natural fit. I offer a wide range of skills ranging from web development, design, research, and project management. If you have any inquiries whatsoever feel free to reach out to me. Let's connect and get to work!</p>
+								</div>
+							</section>
+
       </Container>
     );
 }
