@@ -2,13 +2,16 @@ import React, { useState } from "react";
 import Body from "./Body";
 import Footer from "./Footer";
 import MyNavbar from "./Navbar";
+import Skills from "./Skills";
+import Projects from "./Projects"
 
 function App() {
   return (
     <div>
       <MyNavbar />
       <Body />
-      <h2>Sup</h2>
+      <Skills />
+      <Projects />
       <Footer />
     </div>
   );
