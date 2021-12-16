@@ -7,12 +7,14 @@ const work = [
     {
         key: 2,
         title: "List-It",
-        content: "This is an app that allows users to create and categorize any upcoming tasks that need to be completed. Seperate lists can be made and within each list the user can add and delete items that pertain to the list's topic. An express backend is used to store the input information in a Postgres database."
+        content: "This is an app that allows users to create and categorize any upcoming tasks that need to be completed. Seperate lists can be made and within each list the user can add and delete items that pertain to the list's topic. An express backend is used to store the input information in a Postgres database.",
+        image: 0
     },
     {
         key: 3,
         title: "Keeper",
-        content: "Keeper is a notetaking app with a simple minimalist design and multiple responsive elements. Allowing the user to manipulate each note taking area seperately allows for more ease of use and better organization. This was built built with React using JSX. An express backend with a MongoDB database is in the process of being implemented." 
+        content: "Keeper is a notetaking app with a simple minimalist design and multiple responsive elements. Allowing the user to manipulate each note taking area seperately allows for more ease of use and better organization. This was built built with React using JSX. An express backend with a MongoDB database is in the process of being implemented.",
+        image: 1
     },
     {
         key: 4,
@@ -22,7 +24,8 @@ const work = [
     {
         key: 5,
         title: "Simon Says",
-        content: "This was an early project of mine done to practice advanced CSS and jQuery selectors. It's a fully interactive web browser game based on Simon Says. After initiating a new game, a panel is highlighted and awaits the user input and conitnues if it matches the generated pattern. The game memorizes the pattern and keeps track of the number of successful rounds until the user input is incorrect resulting in a game over."
+        content: "This was an early project of mine done to practice advanced CSS and jQuery selectors. It's a fully interactive web browser game based on Simon Says. After initiating a new game, a panel is highlighted and awaits the user input and conitnues if it matches the generated pattern. The game memorizes the pattern and keeps track of the number of successful rounds until the user input is incorrect resulting in a game over.",
+        image: 2
     },
 ];
 

@@ -1,10 +1,14 @@
 import React from "react";
 import Modal from "./Modal"
+
 import work from "../work"
+import ListItImage from '../images/todolistpage.png';
+import KeeperImage from '../images/keeperpage.png';
+import SimonSaysImage from '../images/simonsayspage.png';
 
 function Projects() {
 
-    // function onClick()
+    const images = [ListItImage, KeeperImage, SimonSaysImage]
 
     return (
         <div>
@@ -14,6 +18,7 @@ function Projects() {
                     key={workItem.key}
                     title={workItem.title}
                     content={workItem.content}
+                    image={images[workItem.image]}
                 />
             ))}
 

@@ -39,6 +39,7 @@ function TransitionsModal(props) {
       >
         <Fade in={open}>
           <Box sx={style}>
+          <img src={props.image} className='work-image'/>
             <Typography id="transition-modal-title" variant="h6" component="h2">
               {props.title}
             </Typography>
