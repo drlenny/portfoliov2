@@ -1,10 +1,14 @@
 import * as React from 'react';
+import { styled } from '@mui/material/styles';
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid'
 
 const style = {
   position: 'absolute',
@@ -18,6 +22,13 @@ const style = {
   p: 4,
 };
 
+const Item = styled(Paper)(({ theme }) => ({
+  ...theme.typography.body2,
+  padding: theme.spacing(2),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
+
 function TransitionsModal(props) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -25,7 +36,9 @@ function TransitionsModal(props) {
 
   return (
     <div>
-      <Button onClick={handleOpen}>{props.title}</Button>
+
+      <Item onClick={handleOpen}>{props.title}</Item>
+
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -38,8 +51,9 @@ function TransitionsModal(props) {
         }}
       >
         <Fade in={open}>
+          {/* <Container> */}
           <Box sx={style}>
-          <img src={props.image} className='work-image'/>
+            <img src={props.image} className='work-image' />
             <Typography id="transition-modal-title" variant="h6" component="h2">
               {props.title}
             </Typography>
@@ -47,6 +61,7 @@ function TransitionsModal(props) {
               {props.content}
             </Typography>
           </Box>
+          {/* </Container> */}
         </Fade>
       </Modal>
     </div>

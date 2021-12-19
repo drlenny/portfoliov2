@@ -12,9 +12,9 @@ function Body() {
 				<div class="container">
 					<img src={selfie} className="selfie"/>
 					<header class="major">
-						<h2>About Me</h2>
+						<h2>Hello hello! Many thanks for visiting and welcome. I'm Daniel, a full stack developer and web designer.</h2>
 					</header>
-					<p>Hello hello! Many thanks for visiting and welcome. I'm Daniel, a full stack developer working from Houston, Texas. After having studied animal behavior and working as a professional dog trainer, I have since turned my focus towards more creative pursuits in programming. My passion in life is to create things that I can share with others and will be of use to people, so naturally the unlimited and ever changing possiblilities of programming code is a natural fit. I offer a wide range of skills from web development, design, research, and project management. If you have any inquiries whatsoever feel free to reach out to me. Let's connect and get to work!</p>
+					<p>After having studied animal behavior and working as a professional dog trainer, I have since turned my focus towards more creative pursuits in programming. My passion in life is to create things that I can share with others and will be of use to people, so naturally the unlimited and ever changing possiblilities of programming code is a natural fit. I offer a wide range of skills from web development, design, research, and project management. If you have any inquiries whatsoever feel free to reach out to me. Let's connect and get to work!</p>
 				</div>
 			</section>
 

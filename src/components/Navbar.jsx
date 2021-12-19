@@ -54,8 +54,17 @@ export default function BackToTop(props) {
       <CssBaseline />
       <AppBar>
         <Toolbar>
-          <Typography variant="h6" component="div">
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Daniel Lenihan
+          </Typography>
+          <Typography variant="h6" component="div" sx={{ mr: 4 }}>
+            Portfolio
+          </Typography>
+          <Typography variant="h6" component="div" sx={{ mr: 4 }}>
+            Resume
+          </Typography>
+          <Typography variant="h6" component="div" sx={{ mr: 4 }}>
+            Contact
           </Typography>
         </Toolbar>
       </AppBar>
