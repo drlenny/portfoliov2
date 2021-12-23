@@ -12,13 +12,17 @@ import Grid from '@mui/material/Grid'
 
 const style = {
   display: 'flex',
-  flexWrap: 'wrap',
+  flexWrap: {
+    sm: 'wrap',
+    md: 'nowrap'
+  },
   alignItems: 'center',
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  // width: 400,
+  width: '80%',
+  minHeight: '60%',
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -58,7 +62,10 @@ function TransitionsModal(props) {
           <Box sx={style}>
             <img src={props.image} className='work-image' />
             <div className='modal-text'>
-              <Typography id="transition-modal-title" variant="h6" component="h2">
+              <Typography id="transition-modal-title" variant="h7" component="h2" sx={{
+                marginTop: '24px',
+                textAlign: 'center'
+              }}>
                 {props.title}
               </Typography>
               <Typography id="transition-modal-description" sx={{ mt: 2 }}>

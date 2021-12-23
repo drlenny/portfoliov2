@@ -2,22 +2,34 @@
     display: inline-block;
     padding-right: 2.5em;
     vertical-align: middle;
+    width: 48%;
+}
+
+.work-image img {
+    display: block;
     width: 100%;
 }
 
-    .work-image img {
-        display: block;
-        width: 100%;
-    }
-/* 
 .modal-text {
     display: inline-block;
+    width: 50%;
 }
 
-#transition-modal-title {
-    display: block;
-}
+@media screen and (max-width: 899px) {
+    .work-image {
+        display: inline-block;
+        padding-right: 0;
+        vertical-align: middle;
+        width: 100%;
+    }
+        .work-image img {
+            display: block;
+            width: 100%;
+        }
 
-#transition-modal-description {
-    display: block;
-} */
+    .modal-text {
+        display: inline-block;
+        width: 100%;
+    }
+
+}
