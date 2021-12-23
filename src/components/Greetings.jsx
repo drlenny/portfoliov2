@@ -10,7 +10,7 @@ function Body() {
 					<h2>Full Stack Web Developer</h2>
 				</div>
 				<div class="container">
-					<img src={selfie} className="selfie"/>
+					<img src={selfie} className="selfie" alt="Picture of me"/>
 					<header class="major">
 						<h2>Hello hello! Many thanks for visiting and welcome. I'm Daniel, a full stack developer and web designer.</h2>
 					</header>

@@ -60,7 +60,7 @@ function TransitionsModal(props) {
         <Fade in={open}>
           {/* <Container> */}
           <Box sx={style}>
-            <img src={props.image} className='work-image' />
+            <img src={props.image} className='work-image' alt={props.alt} />
             <div className='modal-text'>
               <Typography id="transition-modal-title" variant="h7" component="h2" sx={{
                 marginTop: '24px',
@@ -71,6 +71,8 @@ function TransitionsModal(props) {
               <Typography id="transition-modal-description" sx={{ mt: 2 }}>
                 {props.content}
               </Typography>
+              <Button href={props.link} target="_blank">Link</Button>
+              <Button href={props.code} target="_blank">Code</Button>
             </div>
           </Box>
           {/* </Container> */}

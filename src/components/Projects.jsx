@@ -23,6 +23,9 @@ function Projects() {
                             title={workItem.title}
                             content={workItem.content}
                             image={images[workItem.image]}
+                            alt={workItem.alt}
+                            link={workItem.link}
+                            code={workItem.code}
                         />
                     </Grid>
                 ))}
