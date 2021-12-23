@@ -11,11 +11,14 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid'
 
 const style = {
+  display: 'flex',
+  flexWrap: 'wrap',
+  alignItems: 'center',
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  // width: 400,
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -54,12 +57,14 @@ function TransitionsModal(props) {
           {/* <Container> */}
           <Box sx={style}>
             <img src={props.image} className='work-image' />
-            <Typography id="transition-modal-title" variant="h6" component="h2">
-              {props.title}
-            </Typography>
-            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              {props.content}
-            </Typography>
+            <div className='modal-text'>
+              <Typography id="transition-modal-title" variant="h6" component="h2">
+                {props.title}
+              </Typography>
+              <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+                {props.content}
+              </Typography>
+            </div>
           </Box>
           {/* </Container> */}
         </Fade>

@@ -17,6 +17,11 @@ const work = [
         image: 1
     },
     {
+        key: 3,
+        title: "Daily Journal",
+        content: "It's a blog",
+    },
+    {
         key: 4,
         title: "Secrets",
         content: "Ever had a secret nagging at your mind and no way to express it? Well this application helps you doi just that! This app was designed to be a safe place to anonymously share their thoughts and ideas as well as view what other secrets other unknown people may have. This app was an exercise using express and mongoose to develop a secure authentication design with a database populated by private users and their passwords. I'm quite pleased with the end result and I definitely learned a lot about designing authentication security which I believe is critically important for users seeking privacy in a world so dependant on a publically online presence."
