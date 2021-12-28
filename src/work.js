@@ -4,7 +4,7 @@ const work = [
         title: "This Website",
         content: "You're looking at it!",
         image: "",
-        alt: "",
+        alt: "This Website",
         link: "",
         code: "https://github.com/drlenny/portfoliov2"
     },

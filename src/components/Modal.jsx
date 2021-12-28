@@ -58,7 +58,7 @@ function TransitionsModal(props) {
         }}
       >
         <Fade in={open}>
-          {/* <Container> */}
+          <Container>
           <Box sx={style}>
             <img src={props.image} className='work-image' alt={props.alt} />
             <div className='modal-text'>
@@ -75,7 +75,7 @@ function TransitionsModal(props) {
               <Button href={props.code} target="_blank">Code</Button>
             </div>
           </Box>
-          {/* </Container> */}
+          </Container>
         </Fade>
       </Modal>
     </div>
