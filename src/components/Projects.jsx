@@ -5,19 +5,25 @@ import Box from '@mui/material/Box';
 
 import work from "../work"
 
+import ThisWebSiteImage from '../images/todolistpage.png';
 import ListItImage from '../images/todolistpage.png';
 import KeeperImage from '../images/keeperpage.png';
+import DailyJournalImage from '../images/dailyImage.png';
+import SecretImage from '../images/secretsImage.png';
 import SimonSaysImage from '../images/simonsayspage.png';
 
+import ThisWebSiteIcon from '../images/todolistpage.png';
+import ListItIcon from '../images/listIcon.png';
 import KeeperIcon from '../images/keeperIcon.png';
+import DailyJournalIcon from '../images/dailyIcon.png';
 import SecretIcon from '../images/secretIcon.png';
 import SimonIcon from '../images/simonIcon.png';
 
 function Projects() {
 
-    const images = [ListItImage, KeeperImage, SimonSaysImage]
+    const images = [ThisWebSiteImage, ListItImage, KeeperImage, DailyJournalImage, SecretImage, SimonSaysImage]
 
-    const siteIcons = [KeeperIcon, SecretIcon, SimonIcon]
+    const siteIcons = [ThisWebSiteIcon, ListItIcon, KeeperIcon, DailyJournalIcon, SecretIcon, SimonIcon]
 
     return (
         <div>
@@ -32,7 +38,7 @@ function Projects() {
                                 title={workItem.title}
                                 content={workItem.content}
                                 image={images[workItem.image]}
-                                icon={siteIcons[workItem.icon]}
+                                icon={siteIcons[workItem.image]}
                                 color={workItem.color}
                                 alt={workItem.alt}
                                 link={workItem.link}

@@ -35,10 +35,10 @@ function TransitionsModal(props) {
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
-    p: 4,
+    p: 4
   };
 
-  const paperStyle = {
+  const cardStyle = {
     // padding: '100px 16px',
     // maxWidth: '345px',
     height: {
@@ -53,7 +53,8 @@ function TransitionsModal(props) {
     },
     textAlign: 'center',
     margin: 'auto',
-    backgroundColor: `${props.color}`
+    backgroundColor: `${props.color}`,
+    borderRadius: '40px'
   }
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -62,7 +63,7 @@ function TransitionsModal(props) {
   return (
     <div style={{height: '100%'}}>
 
-      <Card onClick={handleOpen} sx={paperStyle}><img className='project-icon' src={`${props.icon}`}/></Card>
+      <Card onClick={handleOpen} sx={cardStyle}><img className='project-icon' src={`${props.icon}`} alt={props.alt}/></Card>
 
       <Modal
         aria-labelledby="transition-modal-title"
