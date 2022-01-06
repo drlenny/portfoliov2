@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -9,13 +9,13 @@ import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Zoom from '@mui/material/Zoom';
 
+import Resume from '../media/lenihanResume.pdf';
+
 function ScrollTop(props) {
+
   const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
+
   const trigger = useScrollTrigger({
-    target: window ? window() : undefined,
     disableHysteresis: true,
     threshold: 100,
   });
@@ -48,7 +48,8 @@ function ScrollTop(props) {
 
 
 
-export default function BackToTop(props) {
+function Navbar(props) {
+
   return (
     <React.Fragment>
       <CssBaseline />
@@ -60,9 +61,12 @@ export default function BackToTop(props) {
           <Typography variant="h6" component="div" sx={{ mr: 4 }}>
             Portfolio
           </Typography>
-          <Typography variant="h6" component="div" sx={{ mr: 4 }}>
-            Resume
-          </Typography>
+          <a href={Resume} target='_blank' id='resume-link'>
+            <Typography variant="h6" component="div" sx={{ mr: 4 }}>
+              Resume
+            </Typography>
+          </a>
+
           <Typography variant="h6" component="div" sx={{ mr: 4 }}>
             Contact
           </Typography>
@@ -77,3 +81,5 @@ export default function BackToTop(props) {
     </React.Fragment>
   );
 }
+
+export default Navbar;
