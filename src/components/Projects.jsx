@@ -26,7 +26,7 @@ function Projects() {
     const siteIcons = [ThisWebSiteIcon, ListItIcon, KeeperIcon, DailyJournalIcon, SecretIcon, SimonIcon]
 
     return (
-        <div>
+        <div id='portfolio'>
             <h2>Featured Projects</h2>
             <Box sx={{ padding: {sm:'80px 150px', md: '80px'} }}>
                 <Grid container spacing={{ xs: 12, md: 10 }} columns={{ sm: 2, md: 8, lg: 12 }} alignItems='stretch'>

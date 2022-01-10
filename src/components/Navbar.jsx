@@ -53,23 +53,31 @@ function Navbar(props) {
   return (
     <React.Fragment>
       <CssBaseline />
+      
       <AppBar>
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
             Daniel Lenihan
           </Typography>
-          <Typography variant="h6" component="div" sx={{ mr: 4 }}>
-            Portfolio
-          </Typography>
-          <a href={Resume} target='_blank' id='resume-link'>
+
+          <a href='#portfolio' className='nav-link'>
+            <Typography variant="h6" component="div" sx={{ mr: 4 }}>
+              Portfolio
+            </Typography>
+          </a>
+
+          <a href={Resume} target='_blank' className='nav-link'>
             <Typography variant="h6" component="div" sx={{ mr: 4 }}>
               Resume
             </Typography>
           </a>
 
-          <Typography variant="h6" component="div" sx={{ mr: 4 }}>
-            Contact
-          </Typography>
+          <a href='#contact' className='nav-link'>
+            <Typography variant="h6" component="div" sx={{ mr: 4 }}>
+              Contact
+            </Typography>
+          </a>
+
         </Toolbar>
       </AppBar>
       <Toolbar id="back-to-top-anchor" />

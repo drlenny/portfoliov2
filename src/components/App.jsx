@@ -3,7 +3,8 @@ import Body from "./Greetings";
 import Footer from "./Footer";
 import MyNavbar from "./Navbar";
 import Skills from "./Skills";
-import Projects from "./Projects"
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Body />
       <Skills />
       <Projects />
+      <Contact />
       <Footer />
     </div>
   );
