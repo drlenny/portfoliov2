@@ -8,6 +8,9 @@ import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Zoom from '@mui/material/Zoom';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import Resume from '../media/lenihanResume.pdf';
@@ -64,19 +67,21 @@ function Navbar(props) {
 
   // setting attributes specifically to the resume link
   useEffect(() => {
-    document.getElementById('resume-link').setAttribute('target', '_blank');
-    document.getElementById('resume-link').setAttribute('href', Resume)
-  }, [])
+    document.querySelectorAll('.resume-link').forEach(function (link) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('href', Resume)
+    })
+  }, [anchorElNav])
 
   return (
     <React.Fragment>
       <CssBaseline />
 
       <AppBar>
-        <Toolbar>
+        <Toolbar disableGutters className='navbar'>
 
           {/* logo */}
-          <Typography variant="h4" noWrap component="div" sx={{ flexGrow: 1, fontVariant: 'small-caps' }}>
+          <Typography variant="h4" noWrap component="div" sx={{ flexGrow: 1, fontVariant: 'small-caps' }} className='logo'>
             Daniel Lenihan
           </Typography>
 
@@ -102,12 +107,54 @@ function Navbar(props) {
           {/* navigation */}
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <a href={`#${page}`} className='nav-link' id={`${page}-link`}>
+              <a key={page} href={`#${page}`} className={`nav-link ${page}-link`}>
                 <Typography key={page} variant="h6" component="div" sx={{ mr: 4, fontVariant: 'small-caps' }}>
                   {`${page.charAt(0).toUpperCase() + page.slice(1)}`}
                 </Typography>
               </a>
             ))}
+          </Box>
+
+          {/* responsive navigation menu box */}
+          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-ap<pbar"
+              aria-haspopup="true"
+              onClick={handleOpenMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseMenu}
+              sx={{
+                display: { xs: 'block', md: 'none' }, 
+              }}
+            >
+              {pages.map((page) => (
+                <MenuItem key={page} onClick={handleCloseMenu}>
+                  <a href={`#${page}`} className={`menu-nav-link ${page}-link`}>
+                    <Typography textAlign='center' sx={{fontVariant: 'small-caps'}}>
+                      {`${page.charAt(0).toUpperCase() + page.slice(1)}`}
+                    </Typography>
+                  </a>
+                </MenuItem>
+              ))}
+            </Menu>
           </Box>
 
         </Toolbar>

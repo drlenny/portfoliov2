@@ -31,7 +31,7 @@ function Projects() {
             <Box sx={{ padding: {sm:'80px 150px', md: '80px'} }}>
                 <Grid container spacing={{ xs: 12, md: 10 }} columns={{ sm: 2, md: 8, lg: 12 }} alignItems='stretch'>
                     {work.map((workItem) => (
-                        <Grid item sm={4} md={4} lg={4}>
+                        <Grid key={workItem.key} item sm={4} md={4} lg={4}>
                             <Modal
                                 key={workItem.key}
                                 index={workItem.key}
