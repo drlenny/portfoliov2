@@ -29,10 +29,11 @@
         vertical-align: middle;
         width: 100%;
     }
-        .work-image img {
-            display: block;
-            width: 100%;
-        }
+
+    .work-image img {
+        display: block;
+        width: 100%;
+    }
 
     .modal-text {
         display: inline-block;
@@ -58,7 +59,8 @@
     color: white;
     text-decoration: none;
 }
-    /* .nav-link div {
+
+/* .nav-link div {
         margin-right: 40px;
     }
  */
@@ -69,5 +71,9 @@
 }
 
 .scroll-button {
-    background-color:rgb(0, 119, 255)
+    background-color: rgb(0, 119, 255)
+}
+
+.portfolio-card:hover {
+    transform: scale(1.1); 
 }

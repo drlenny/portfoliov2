@@ -54,16 +54,23 @@ function TransitionsModal(props) {
     textAlign: 'center',
     margin: 'auto',
     backgroundColor: `${props.color}`,
-    borderRadius: '40px'
+    borderRadius: '40px',
+    transition: '.2s'
   }
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
-    <div style={{height: '100%'}}>
-
-      <Card onClick={handleOpen} sx={cardStyle}><img className='project-icon' src={`${props.icon}`} alt={props.alt}/></Card>
+    <div>
+    <div className="zoom"></div>
+      <Card
+        onClick={handleOpen}
+        sx={cardStyle}
+        className= 'portfolio-card'
+      >
+        <img className='project-icon' src={`${props.icon}`} alt={props.alt} />
+      </Card>
 
       <Modal
         aria-labelledby="transition-modal-title"
