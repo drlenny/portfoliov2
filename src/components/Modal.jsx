@@ -63,11 +63,11 @@ function TransitionsModal(props) {
 
   return (
     <div>
-    <div className="zoom"></div>
+      <div className="zoom"></div>
       <Card
         onClick={handleOpen}
         sx={cardStyle}
-        className= 'portfolio-card'
+        className='portfolio-card'
       >
         <img className='project-icon' src={`${props.icon}`} alt={props.alt} />
       </Card>
@@ -82,23 +82,25 @@ function TransitionsModal(props) {
         BackdropProps={{
           timeout: 500,
         }}
+        sx={{
+          overflow: 'scroll'
+        }}
       >
         <Fade in={open}>
           <Container>
             <Box sx={boxStyle}>
               <img src={props.image} className='work-image' alt={props.alt} />
               <div className='modal-text'>
-                <Typography id="transition-modal-title" variant="h7" component="h2" sx={{
-                  marginTop: '24px',
-                  textAlign: 'center'
-                }}>
+                <Typography id="transition-modal-title" variant="h7" component="h2" sx={{ margin: '30px', textAlign: 'center' }}>
                   {props.title}
                 </Typography>
                 <Typography id="transition-modal-description" sx={{ mt: 2 }}>
                   {props.content}
                 </Typography>
-                <Button href={props.link} target="_blank">Link</Button>
-                <Button href={props.code} target="_blank">Code</Button>
+                <div className='modal-buttons'>
+                  <Button href={props.link} target="_blank" sx={{ mr: '30px' }}>Link</Button>
+                  <Button href={props.code} target="_blank" sx={{ ml: '30px' }}>Code</Button>
+                </div>
               </div>
             </Box>
           </Container>
