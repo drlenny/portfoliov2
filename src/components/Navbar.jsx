@@ -116,7 +116,12 @@ function Navbar(props) {
                     fontVariant: 'small-caps',
                     textTransform: 'none',
                     display: 'block',
-                    fontSize: '1.4rem'
+                    fontSize: '1.4rem',
+                    transition: '.2s',
+                    ':hover': {
+                      bgcolor: 'rgba(10, 0, 37, 0.438)',
+                      transform: 'scale(1.1)'
+                    }
                   }}
                 >
                   {`${page.charAt(0).toUpperCase() + page.slice(1)}`}

@@ -55,7 +55,10 @@ function TransitionsModal(props) {
     margin: 'auto',
     backgroundColor: `${props.color}`,
     borderRadius: '40px',
-    transition: '.2s'
+    transition: '.2s',
+    ':hover': {
+      transform: 'scale(1.1)'
+    }
   }
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
