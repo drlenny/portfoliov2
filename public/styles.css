@@ -1,8 +1,10 @@
 .work-image {
     display: inline-block;
-    padding-right: 2.5em;
     vertical-align: middle;
+    padding-right: 2.5em;
     width: 48%;
+    min-width: 400px;
+    flex-grow: 1;
 }
 
 .work-image img {
@@ -10,9 +12,19 @@
     width: 100%;
 }
 
+.modal-content {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: calc(100vh - 100px) !important;
+    overflow-y: auto;
+}
+
 .modal-text {
     display: inline-block;
     width: 50%;
+    flex-grow: 1;
 }
 
 .modal-buttons {
@@ -27,7 +39,7 @@
     margin: auto;
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 1000px) {
     .work-image {
         display: inline-block;
         padding-right: 0;
@@ -80,5 +92,5 @@
 }
 
 .portfolio-card:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }

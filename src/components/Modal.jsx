@@ -31,11 +31,11 @@ function TransitionsModal(props) {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: '80%',
-    minHeight: '60%',
+    minHeight: '70%',
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
-    p: 4
+    p: 4,
   };
 
   const cardStyle = {
@@ -82,24 +82,24 @@ function TransitionsModal(props) {
         BackdropProps={{
           timeout: 500,
         }}
-        sx={{
-          overflow: 'scroll'
-        }}
+
       >
         <Fade in={open}>
           <Container>
             <Box sx={boxStyle}>
-              <img src={props.image} className='work-image' alt={props.alt} />
-              <div className='modal-text'>
-                <Typography id="transition-modal-title" variant="h7" component="h2" sx={{ margin: '30px', textAlign: 'center' }}>
-                  {props.title}
-                </Typography>
-                <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-                  {props.content}
-                </Typography>
-                <div className='modal-buttons'>
-                  <Button href={props.link} target="_blank" sx={{ mr: '30px' }}>Link</Button>
-                  <Button href={props.code} target="_blank" sx={{ ml: '30px' }}>Code</Button>
+              <div className='modal-content'>
+                <img src={props.image} className='work-image' alt={props.alt} />
+                <div className='modal-text'>
+                  <Typography id="transition-modal-title" variant="h7" component="h2" sx={{ margin: '30px', textAlign: 'center' }}>
+                    {props.title}
+                  </Typography>
+                  <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+                    {props.content}
+                  </Typography>
+                  <div className='modal-buttons'>
+                    <Button href={props.link} target="_blank" sx={{ mr: '30px' }}>Link</Button>
+                    <Button href={props.code} target="_blank" sx={{ ml: '30px' }}>Code</Button>
+                  </div>
                 </div>
               </div>
             </Box>
