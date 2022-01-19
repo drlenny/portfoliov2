@@ -145,7 +145,12 @@ function Navbar(props) {
               color="inherit"
               sx={{
                 my: 2,
-                pr: '32px'
+                mr: '32px',
+                transition: '.2s',
+                ':hover': {
+                  bgcolor: 'rgba(10, 0, 37, 0.438)',
+                  transform: 'scale(1.1)'
+                }
               }}
             >
               <MenuIcon sx={{ fontSize: '2.5rem' }} />
