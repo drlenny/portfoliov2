@@ -13,8 +13,10 @@ function App() {
       <Body />
       <Skills />
       <Projects />
-      <Contact />
-      <Footer />
+      <div id="bottom">
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

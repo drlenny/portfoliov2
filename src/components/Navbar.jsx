@@ -139,7 +139,7 @@ function Navbar(props) {
             <IconButton
               size="large"
               aria-label="account of current user"
-              aria-controls="menu-ap<pbar"
+              aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenMenu}
               color="inherit"
