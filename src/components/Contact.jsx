@@ -9,7 +9,7 @@ function Contact() {
         <div id='contact'>
             <IconButton
                 id='linkedin'
-                className='contact-link'
+                className='contact-icon-link'
                 size="large"
                 href="https://www.linkedin.com/in/daniel-lenihan/"
                 target="_blank"
@@ -26,7 +26,7 @@ function Contact() {
             </IconButton>
             <IconButton
                 id='github'
-                className='contact-link'
+                className='contact-icon-link'
                 size="large"
                 href="https://github.com/drlenny"
                 target="_blank"
@@ -43,7 +43,7 @@ function Contact() {
             </IconButton>
             <IconButton
                 id='email'
-                className='contact-link'
+                className='contact-icon-link'
                 size="large"
                 href="mailto:lenihand22@gmail.com"
                 target="_blank"
