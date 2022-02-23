@@ -28,10 +28,10 @@ function Projects() {
     return (
         <div id='portfolio'>
             <h2>Featured Projects</h2>
-            <Box sx={{ padding: {sm:'80px 150px', md: '80px'} }}>
-                <Grid container spacing={{ xs: 12, md: 10 }} columns={{ sm: 2, md: 8, lg: 12 }} alignItems='stretch'>
+            <Box sx={{ padding: '40px 0', flexGrow: 1 }}>
+                <Grid container spacing={{ xs: 9, md: 10 }} columns={{ xs: 2, sm: 2, md: 8, lg: 12 }} >
                     {work.map((workItem) => (
-                        <Grid key={workItem.key} item sm={4} md={4} lg={4}>
+                        <Grid key={workItem.key} item xs={4} sm={4} md={4} lg={4}>
                             <Modal
                                 key={workItem.key}
                                 index={workItem.key}

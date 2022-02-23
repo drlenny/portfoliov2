@@ -87,6 +87,13 @@
     font-variant: small-caps;
 }
 
+#skill-section {
+    font-size: 7rem;
+    text-align: center;
+    margin-left: 16px;
+    flex-grow: 1;
+}
+
 .scroll-button {
     background-color: rgba(0, 60, 129, 0.493)
 }
@@ -110,4 +117,8 @@
 #copyright {
     margin: 0;
     padding: 1em 0;
+}
+
+footer {
+    text-align: center;
 }
