@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Body from "./Greetings";
+import Greetings from "./Greetings";
 import Footer from "./Footer";
 import MyNavbar from "./Navbar";
 import Skills from "./Skills";
@@ -10,7 +10,9 @@ function App() {
   return (
     <div>
       <MyNavbar />
-      <Body />
+      <div id='greetings'>
+        <Greetings />
+      </div>
       <Skills />
       <Projects />
       <div id="bottom">
