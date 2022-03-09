@@ -101,8 +101,8 @@ function TransitionsModal(props) {
                     {props.content}
                   </Typography>
                   <div className='modal-buttons'>
-                    <Button href={props.link} target="_blank" sx={{ mr: '30px' }}>Link</Button>
-                    <Button href={props.code} target="_blank" sx={{ ml: '30px' }}>Code</Button>
+                    <Button size='large' variant='contained' href={props.link} target="_blank" sx={{ mr: '30px' }}>Link</Button>
+                    <Button size='large' variant='contained' href={props.code} target="_blank" sx={{ ml: '30px' }}>Code</Button>
                   </div>
                 </div>
               </div>

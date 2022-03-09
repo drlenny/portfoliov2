@@ -1,10 +1,12 @@
+/* Navbar */
+
 .appbar {
     height: 80px;
 }
 
 .navbar {
     padding: 8px 16px;
-    background-image: linear-gradient(190deg, rgb(0, 119, 255), rgb(10, 0, 37));
+    background-image: linear-gradient(190deg, rgb(0, 119, 255), rgb(22, 3, 73));
 }
 
 .logo {
@@ -26,10 +28,13 @@
     font-variant: small-caps;
 }
 
+/* Greetings */
+
 #greetings {
-    background-color: rgb(44, 44, 51);
     padding-top: 25px;
     color: aliceblue;
+    background: #17171a url("https://www.transparenttextures.com/patterns/bright-squares.png");
+    background-blend-mode: color-dodge;
 }
 
 #one {
@@ -51,18 +56,29 @@
     padding-bottom: 25px;
 }
 
+header {
+    font-size: 1.5rem;
+}
+
 #greetings-bio {
     font-size: 1.25em;
 }
 
+/* Skills */
+
 #skill-section {
     font-size: 7rem;
     text-align: center;
-    margin-left: 16px;
+    padding-left: 16px;
     flex-grow: 1;
-    padding-top: 5rem;
-    padding-bottom: 3rem
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    background: url("https://www.transparenttextures.com/patterns/always-grey.png") rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+
 }
+
+/* Portfolio */
 
 #portfolio {
     background-color: rgb(195, 195, 216);
@@ -74,10 +90,10 @@
 .work-image {
     display: inline-block;
     vertical-align: middle;
-    padding-right: 2.5em;
     width: 48%;
     min-width: 400px;
     flex-grow: 1;
+    border-radius: 40px;
 }
 
 .work-image img {
@@ -98,6 +114,7 @@
     display: inline-block;
     width: 50%;
     flex-grow: 1;
+    padding-left: 2.5rem;
 }
 
 .modal-buttons {
@@ -140,8 +157,10 @@
     transform: scale(1.1);
 } */
 
+/* Bottom */
+
 #bottom {
-    background-image: linear-gradient(190deg, rgb(0, 119, 255), rgb(10, 0, 37));
+    background-image: linear-gradient(190deg, rgb(0, 119, 255), rgb(22, 3, 73));
     color: aliceblue;
 }
 
