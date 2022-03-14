@@ -54,10 +54,16 @@
 .textWrapper {
     text-align: center;
     padding-bottom: 25px;
+    font-variant: small-caps;
 }
 
 header {
     font-size: 1.5rem;
+}
+
+#my-name {
+    font-size: 2.5rem;
+    margin: 25px;
 }
 
 #greetings-bio {
@@ -66,6 +72,12 @@ header {
 
 /* Skills */
 
+#middle {
+    background: url("https://www.transparenttextures.com/patterns/always-grey.png") rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+
+}
+
 #skill-section {
     font-size: 7rem;
     text-align: center;
@@ -73,18 +85,21 @@ header {
     flex-grow: 1;
     padding-top: 4rem;
     padding-bottom: 3rem;
-    background: url("https://www.transparenttextures.com/patterns/always-grey.png") rgba(255, 255, 255, 0.5);
-    background-blend-mode: lighten;
-
 }
 
 /* Portfolio */
 
 #portfolio {
-    background-color: rgb(195, 195, 216);
+    background-color: rgba(221, 221, 221, 0.274);
     padding-top: 2.4rem;
     padding-bottom: 2rem;
     text-align: center;
+}
+
+#portfolio-title {
+  font-size: 3.5rem;
+  font-variant: small-caps;
+  margin: 20px;
 }
 
 .work-image {

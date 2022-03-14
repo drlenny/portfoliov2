@@ -7,7 +7,8 @@ function Body() {
 	return (
 		<Container>
 			<section id="one">
-				<div className="textWrapper"><h1>DANIEL LENIHAN</h1>
+				<div className="textWrapper">
+					<h1 id='my-name'>Daniel Lenihan</h1>
 					<h2>Full Stack Web Developer</h2>
 				</div>
 				<Grid container spacing={5} columns={12} alignItems='center'>

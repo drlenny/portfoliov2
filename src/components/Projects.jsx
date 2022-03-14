@@ -27,7 +27,7 @@ function Projects() {
 
     return (
         <div id='portfolio'>
-            <h2>Featured Projects</h2>
+            <h2 id='portfolio-title'>Featured Projects</h2>
             <Box sx={{ padding: '40px 0', flexGrow: 1 }}>
                 <Grid container spacing={{ xs: 9, md: 10 }} columns={{ xs: 2, sm: 2, md: 8, lg: 12 }} >
                     {work.map((workItem) => (

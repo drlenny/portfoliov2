@@ -13,8 +13,10 @@ function App() {
       <div id='greetings'>
         <Greetings />
       </div>
-      <Skills />
-      <Projects />
+      <div id='middle'>
+        <Skills />
+        <Projects />
+      </div>
       <div id="bottom">
         <Contact />
         <Footer />
