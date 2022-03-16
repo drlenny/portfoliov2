@@ -5,14 +5,14 @@ import Box from '@mui/material/Box';
 
 import work from "../work"
 
-import ThisWebSiteImage from '../images/todolistpage.png';
+import ThisWebSiteImage from '../images/profilePage.png';
 import ListItImage from '../images/todolistpage.png';
 import KeeperImage from '../images/keeperpage.png';
 import DailyJournalImage from '../images/dailyImage.png';
 import SecretImage from '../images/secretsImage.png';
 import SimonSaysImage from '../images/simonsayspage.png';
 
-import ThisWebSiteIcon from '../images/todolistpage.png';
+import ThisWebSiteIcon from '../images/profileIcon.png';
 import ListItIcon from '../images/listIcon.png';
 import KeeperIcon from '../images/keeperIcon.png';
 import DailyJournalIcon from '../images/dailyIcon.png';

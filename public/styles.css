@@ -75,7 +75,6 @@ header {
 #middle {
     background: url("https://www.transparenttextures.com/patterns/always-grey.png") rgba(255, 255, 255, 0.5);
     background-blend-mode: lighten;
-
 }
 
 #skill-section {
@@ -83,14 +82,14 @@ header {
     text-align: center;
     padding-left: 16px;
     flex-grow: 1;
-    padding-top: 4rem;
-    padding-bottom: 3rem;
+    padding-top: 2.4rem;
+    padding-bottom: 1.5rem;
 }
 
 /* Portfolio */
 
 #portfolio {
-    background-color: rgba(221, 221, 221, 0.274);
+    background-color: rgba(136, 136, 136, 0.198);
     padding-top: 2.4rem;
     padding-bottom: 2rem;
     text-align: center;
