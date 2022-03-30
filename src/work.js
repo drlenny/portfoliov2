@@ -2,10 +2,10 @@ const work = [
     {
         key: 1,
         title: "This Website",
-        content: "You're looking at it!",
+        content: "I designed this website completely from scratch utilizing React, Material-ui, and other elements that I personally designed. My previous iteration of this site was only HTML and javascript using a template as a base. I decided to redesign it to better display my web development and design capabilities as well as get more experience with React. The goal when doing so was to create a site that was simple, clean, and intuitive and I am very pleased with the result.",
         image: 0,
         alt: "This Website",
-        link: "",
+        link: "https://daniellenihan.herokuapp.com/",
         code: "https://github.com/drlenny/portfoliov2"
     },
     {
@@ -28,16 +28,16 @@ const work = [
         link: "https://my-react-keeper-app.herokuapp.com/",
         code: "https://github.com/drlenny/keeper-app"
     },
-    {
-        key: 4,
-        title: "Daily Journal",
-        content: "It's a blog",
-        image: 3,
-        color: '',
-        alt: "Daily Journal App",
-        link: "https://journaldailyblog.herokuapp.com/",
-        code: "https://github.com/drlenny/daily-journal-blog"
-    },
+    // {
+    //     key: 4,
+    //     title: "Daily Journal",
+    //     content: "It's a blog",
+    //     image: 3,
+    //     color: '',
+    //     alt: "Daily Journal App",
+    //     link: "https://journaldailyblog.herokuapp.com/",
+    //     code: "https://github.com/drlenny/daily-journal-blog"
+    // },
     {
         key: 5,
         title: "Secrets",
